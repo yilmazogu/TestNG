@@ -15,4 +15,6 @@ public class BlueRentalLoginPage {
     public WebElement loginButton;
     @FindBy(xpath="//div[@role='alert']")
     public WebElement error_message_1;
+    @FindBy(xpath="//*[text()='Bad credentials']")
+    public WebElement bad_credential_message;
 }
