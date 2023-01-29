@@ -50,7 +50,7 @@ public class Day23_ExcelLogin {
     }
     @Test
     public void customerLogin(){
-        String path="./src/test/java/resources/mysmoketestdata.xlsx";
+        String path=".\\src\\test\\java\\resources\\mysmoketestdata (1).xlsx";
 //        ./ ONCEKI TUM DOSYALARI ICER. RELATIVE PATH.
         String sayfa = "customer_info";
 //        DATALARI EXCEL UTILS METOTLARINI KULLANARAK BURAYA ALACAZ

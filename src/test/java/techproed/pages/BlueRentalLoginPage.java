@@ -13,7 +13,6 @@ public class BlueRentalLoginPage {
     public WebElement passwordBox;
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
-
-    @FindBy(id="1zetvktns")
+    @FindBy(xpath="//div[@role='alert']")
     public WebElement error_message_1;
 }
