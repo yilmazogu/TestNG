@@ -8,7 +8,7 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
-public class NegativeTest {
+public class Negative_Login_Test1 {
 
     BlueRentalHomePage blueRentalHomePage;
     BlueRentalLoginPage blueRentalLoginPage;

@@ -1,18 +1,22 @@
 package techproed.tests;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
 public class Day20_DependsOnMethods {
     @Test
-    public void homeTest(){
+    public void homeTest() {
         System.out.println("Home Test");
         Assert.assertTrue(false);//FAIL
     }
+
     @Test(dependsOnMethods = "homeTest")
-    public void searchTest(){
+    public void searchTest() {
         System.out.println("Search Test");
     }
+
     @Test(dependsOnMethods = "homeTest")
-    public void paymentTest(){
+    public void paymentTest() {
         System.out.println("Payment Test");
     }
 }

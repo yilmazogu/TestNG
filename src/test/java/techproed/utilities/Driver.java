@@ -1,10 +1,13 @@
 package techproed.utilities;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import techproed.utilities.ConfigReader;
+
 import java.time.Duration;
 public class Driver {
     //    Driver.getDriver(); -> driver
@@ -33,8 +36,8 @@ public class Driver {
 //            NOTE: sel 4.5
 //            driver = WebDriverManager.chromedriver().create();
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
         driver.manage().window().maximize();
         return driver;
     }
@@ -45,6 +48,5 @@ public class Driver {
         if (driver!=null){
             driver.quit();
             driver=null;
-        }
-    }
-}
+
+}}}

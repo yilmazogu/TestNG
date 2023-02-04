@@ -15,4 +15,23 @@ public class BlueRentalHomePage {
     public WebElement logOutLink;
     @FindBy(xpath = "//button[.='OK']")
     public WebElement OK;
+    @FindBy(xpath = "//*[@name='car']")
+    public WebElement Select_a_car_dropdown;
+    @FindBy(xpath = "//*[@name='pickUpLocation']")
+    public WebElement pickup;
+    @FindBy(xpath="//*[@name='dropOfLocation']")
+    public WebElement dropOff;
+    @FindBy(xpath="//*[@name='pickUpDate']")
+    public WebElement pickupDate;
+    @FindBy(xpath="//*[@name='pickUpTime']")
+    public WebElement pickupTime;
+    @FindBy(xpath="//*[@name='dropOffDate']")
+    public WebElement dropOffDate;
+    @FindBy(xpath="//*[@name='dropOffTime']")
+    public WebElement dropOffTime;
+    @FindBy(xpath = "//*[.=' CONTINUE RESERVATION']")
+    public WebElement continueReservation;
+
+
+
 }

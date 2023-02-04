@@ -17,4 +17,6 @@ public class BlueRentalLoginPage {
     public WebElement error_message_1;
     @FindBy(xpath="//*[text()='Bad credentials']")
     public WebElement bad_credential_message;
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement invalid_mail_message;
 }

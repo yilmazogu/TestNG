@@ -11,7 +11,7 @@ public class OpenSourcePage {
 
     //    1. constructor
     public OpenSourcePage(){
-//        PageFactory seleniumdan gelen ve bu sayfa elementlerini baslangic degeri vermek etmek icin kullanilir
+//        PageFactory seleniumdan gelen ve bu sayfa elementlerini baslangic degeri vermek icin kullanilir
 //        Bu sekilde Sayfa objeleri cagrildiginda null pointer exception alinmaz
         PageFactory.initElements(Driver.getDriver(),this);
     }
